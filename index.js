@@ -1,6 +1,7 @@
 // EDIT THIS FILE TO COMPLETE ASSIGNMENT QUESTION 1
 const { chromium } = require("playwright")
 const fs = require("fs")
+const csvFilePath = './top-ten.csv'
 
 async function saveHackerNewsArticles() {
     // launch browser
@@ -58,7 +59,36 @@ function createCSV(data) {
   console.log("CSV file created at: ", csvFile )
 }
 
+function readCSV(filename) {
+  // Read the CSV file
+  fs.readFile(filename, 'utf8', (err, data) => {
+      if (err) {
+          console.error('Error reading CSV file:', err)
+          return
+      }
+
+      // Parse CSV data
+      const rows = data.split('\n')
+      const headers = rows[0].split(',')
+
+      const results = rows.slice(1).map(row => {
+          const values = row.split(',')
+          return headers.reduce((obj, header, index) => {
+              obj[header.trim()] = values[index].trim()
+              return obj
+          }, {})
+      })
+
+      // Display the contents of the CSV file
+      results.forEach(result => {
+          console.log("Title: ", result.Title)
+          console.log("URL:   ", result.URL, "\n")
+      })
+  })
+}
+
 (async () => {
     const articles = await saveHackerNewsArticles()
     createCSV(articles)
-})();
+    readCSV(csvFilePath)
+})()
