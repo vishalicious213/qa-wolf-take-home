@@ -1,0 +1,7 @@
+Why do I want to work at QA Wolf?
+
+QA isn't generally looked at as an exciting activity, but I've done manual QA testing, ensuring that clinical software operated the way that it was expected to. It was a rewarding knowing that my efforts had a purpose making clinicians' lives easier helping improve patient care.
+
+QA Wolf expands this in interesting ways to me - the first is the wider breadth of companies, with exposure to a greater range products and ideas. This intrigues me. I want to see other people's code and design, and help to improve them when possible. The second is that this role utilizes automated testing, which I've only had brief exposure to during bootcamp. Through QA Wolf, I've discovered Playwright, which runs and automates application processes - areas in which I'd like to grow.
+
+Finally, Luke Parr, who referred me, is a graduate from the coding bootcamp that I graduated from. According to LinkedIn, 10 people who work at the company come from my bootcamp and Luke said that the entire QA Engineering department is comprised of bootcamp grads. I come from a non-traditional background and seeing that QA Wolf invests in people like me is a huge draw – exactly the opportunity I’ve sought. During a chat with Luke, he described the inclusive environment, helpful nature of the other QA engineers and explained growth opportunities at the company, in QA and other technical areas. All of this combines to form an opportunity that calls to me.
